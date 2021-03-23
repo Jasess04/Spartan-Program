@@ -15,44 +15,52 @@
 }
 
 body {
-  color: #878787;
+  color: Black;
   margin: 0;
   font: 1em/1.5 "Helvetica Neue, Helvetica, Arial, sans-serif";
 }
 
-h1,
-h2 {
+h1,h2 {
  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif ;
 }
 
 /*SECTION 03*/
 h1 {  
-  font-size: 6rem; /* 90px/16px  */
+  font-size: 6rem; 
   text-transform: uppercase;
   font-weight: normal;
   line-height: 1.3; 
   text-shadow: 0 5px 5px rgba(0,0,0,.8);
   margin:12px 0 0; 
-  color: whitesmoke;
-  Font-size: 20;
+  color: black;
+ 
 }
- /* role and operations */
+ /* Spartan Mission Statement */
 h2 {
-  font-size: 5em; /* 53px/16px  */
+  padding-top:10px; 
+  font-size: 3em; 
   font-weight: normal;
   text-transform: uppercase;
   line-height: 1;
-  margin: 0 0 .5em; /* 0 0 26px */
+  margin: 0 0 .5em;
+  border-bottom:2px solid; 
 }
 
-/*Planet Reach*/
+/*Spartan Training*/
 h3 {
-  font-size: 1.25em 20px/16px;
-  font-weight: normal;
+  font-size: 1.25em;
   color: black;
-  line-height: 1;
-  margin-bottom: 0 0 .5em; /* 34px */
-  text-align: center; 
+  line-height: 1.2;
+  margin-bottom: 0 0 .5em; 
+   
+}
+/*Spartan Variants)*/
+h4{
+  font-size: 1.25em;
+  Font-weight: normal;  
+  text-transform: uppercase;
+  line-height: .5;
+  margin: 5 0 1em; /* 0 0 26px */
 }
 
 img {
@@ -72,28 +80,28 @@ li {
 
 /* Pseudo-classes ------------------ */
 
-/* link coloring*/
-/*a:link {
-  color:orange;
+
+/*Mission Statment*/
+a:link {
+  color: black;
   text-decoration: none;
 }
-*/
 
 a:visited {
-  color: black;
+  color: Orange;
 }
 /* Planet reach links colors */
 a:hover {
-  color: orange;
+  color: Royal Blue;
 }
 
 a:active {
-  color: black;
+  color: RoyalBlue;
 }
 
 /* Main Styles --------------------- */
 
-/*Office of Naval Intelligence*/
+/*The Spartan Program*/
 .main-header {
   padding-top: 150px;
   height: 850px;
@@ -101,12 +109,13 @@ a:active {
   /*Background image*/
   background: linear-gradient(#4169e1, transparent 50%),
               linear-gradient(0deg, #fff, transparent),
-              #a9a9a9 url('../img/Mountain.jpg') no-repeat center;
+              #a9a9a9 url('../img/Spartans.jpg') no-repeat center;
   background-size: cover;
   color:white;
- 
 }
-/*ONI Logo position*/
+
+
+/*Spartan Logo position*/
 .title {
   font-size: 2rem; /* 26px/16px */
  
@@ -123,7 +132,7 @@ a:active {
   padding-bottom: 25px;
   /*text-shadow: 0 5px 5px rgba(0,0,0,.8);*/
 }
- /* ONI symbol, Warning, Role, ONI description*/
+ /* Spartan, Warning, Role, ONI description*/
 .primary-content,
 .main-header,
 .main-footer {
@@ -138,15 +147,7 @@ a:active {
 .secondary-content {
 	padding-top: 80px;
 	padding-bottom: 70px;
-  border-bottom: 2px solid #dfe2e6;
-}
-
-.callout {
-  font-size: 1.25em;
-  border-bottom: 3px solid;
-  padding: 0 9px 3px;
-  margin-top: -7px;
-  display: inline-block;
+  border-bottom: 2px solid black;
 }
 
 .main-footer {
@@ -156,7 +157,7 @@ a:active {
 }
 
 .t-border {
-  border-top: 2px solid #dfe2e6;
+  border-top: 2px solid black;
 }
 
 /* Layout Styles ------------------ */
@@ -170,13 +171,13 @@ a:active {
   max-width: 960px;
 }
 
-.role {
-  color: white;
+.Mission Statement {
+  color: black;
   text-align: left;
   padding: 18% 24%;
   border-top: 10px solid black;
   margin: 105px 0 60px;
-  background:black 2 url('Glow.jpg') no-repeat center;
+  background:black 2 url('../img/Training.jpg') no-repeat center;
   background-size: cover;
   box-shadow: inset 0 0 50px 10px rgba(0,0,0, 1);
   
@@ -187,8 +188,9 @@ border-radius: 10px;
 
 /* Floated Columns ------------------ */
 
-.ONI Sections,
-.commander {
+.ONI,
+.commander,
+.Spartan 2 program {
   width: 50%;
 }
 
@@ -198,7 +200,7 @@ border-radius: 10px;
   flex-direction:column;
 }
 
-.ONI Sections {
+.Spartan Variants {
   text-align:center;
 }
 
@@ -206,7 +208,7 @@ border-radius: 10px;
 
 .group:after {
   content: "";
-  display: table;
+  display:table;
   clear: both;
 }
 
@@ -300,3 +302,12 @@ p {
 */
 
 
+ /*
+.callout {
+  font-size: 1.25em;
+  border-bottom: 3px solid;
+  padding: 0 9px 3px;
+  margin-top: -7px;
+  display: inline-block;
+}
+*/
