@@ -31,12 +31,10 @@ h1,h2 {
 
 /*SECTION 03*/ /*spartan logo*/
 h1 {  
-  font-size: 6rem; 
-  text-transform: uppercase;
-  font-weight: normal;
-  line-height: 1; 
-  text-shadow: 0 5px 5px rgba(0,0,0,.8);
-  margin:12px 0 0; 
+  font-size: 4rem; 
+  line-height: .2; 
+  text-shadow: 0 5px 5px;
+  margin: 1px 0 0; 
   color: black;
  
 }
@@ -89,17 +87,14 @@ li {
 
 /*Mission Statment*/
 a:link {
-  color: black;
+  color: royalblue;
   text-decoration: none;
 }
 
 a:visited {
   color: Orange;
 }
-/* Planet reach links colors */
-a:hover {
-  color: Royal Blue;
-}
+
 
 a:active {
   color: RoyalBlue;
@@ -110,7 +105,7 @@ a:active {
 /*The Spartan Program*/
 .main-header {
   padding-top: 150px;
-  height: 850px;
+  /* height: 850px; */
 
   /*Background image*/
   background: linear-gradient(#4169e1, transparent 50%),
@@ -175,7 +170,7 @@ a:active {
   margin: auto;
   max-width: 960px;
 }
-*
+
 .Mission Statement {
   color: black;
   text-align: right;
@@ -188,42 +183,50 @@ a:active {
 }
 
 
-/* Floated Columns ------------------ */
+/* Floated Columns */
 
 .Spartan Variants {
   text-align: center;
 }
 
-/* Float Clearfix ------------------ */
+/* Float Clearfix */
 
 .group:after {
   content: "";
   display:table;
   clear: both;
 }
+/*adjusts the content of the primary and secondary content areas */
 
-@media (max-width: 1024px) {
- .primary-content,
- .secondary-content,
- .Logo {
-   width: 100%;
- }
-  .Spartan logo.png{
-   padding:10% 12;
-   margin: 50px 0 20ox;
+ /*Media Queries*/ 
+ 
+ /*changes the color of the screen when narrower than 960px*/
+ @media (max-width: 960px) {
+  body {
+   background: royalblue; 
   }
 }
 
-@media (max-width:768px) { 
+@media (max-width: 1024px) {
  .primary-content,
- .secondary-content 
- .Logo
- {
-
-  width: 100%;
-  padding: 20px;
-  border-top: none;
+ .secondary-content {
+   width: 90%;
  }
+}
+
+  .Spartan logo.png {
+   padding:100% 12;
+   margin: 25px 0 20px;
+  }
+
+/* when content is narrower than*/
+@media (max-width:760px) { 
+ .primary-content,
+ .secondary-content {
+  width: 90%;
+ }
+}
+
  
  @media print {
   section {
@@ -232,7 +235,7 @@ a:active {
  }
 
 .main-header {
-  max-height: 380px;
+  /* max-height: 380px; */
   padding: 50px 25px 0;
  }
 
@@ -240,6 +243,7 @@ a:active {
  font-size:1.3rem;
  border:none; 
  }
+
 h1 {
   font-size: 5rem;
   line-height: 1.1;
@@ -262,27 +266,10 @@ h1 {
 }
 
 
- /*Media Queries*/ 
-@media (max-width: 960px) {
- body {
-  background: royalblue; 
+
  }
 }
 
-@media (max-width: 500px) {
- body {
-   background: darkred;
- }
-}
-
-@media (min-width: 418px) and (max-width: 700px){
-  body {
-   background: RoyalBlue;
-}
-p {
-  color:white;
-  }
-}
 
 
 
