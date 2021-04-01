@@ -14,17 +14,19 @@
   box-sizing: border-box;
 }
 
+/*Controls body color, font size and font*/
 body {
   color: Black;
-  margin: 0;
   font: 1em/1.5 "Helvetica Neue, Helvetica, Arial, sans-serif";
 }
 
+/* The JAVA SCRIPT function that hides text secions until MORE is clicked*/
 .hidden{
 
   display: none;
 }
-
+/*controls the font for H1 and H2, for some reason when i add H3 and 4
+it makes all of the fonts wonky*/
 h1,h2 {
  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif ;
 }
@@ -32,40 +34,53 @@ h1,h2 {
 /*SECTION 03*/ /*spartan logo*/
 h1 {  
   font-size: 4rem; 
-  line-height: .2; 
-  text-shadow: 0 5px 5px;
-  margin: 1px 0 0; 
-  color: black;
- 
+  margin: 5px; 
+  font-weight: normal;
 }
+
+/*Classification warning*/
+.intro {
+  font-size: 1em; 
+  color: red;
+  letter-spacing: .01em; 
+  padding-bottom: 10px;
+  text-shadow: 0 10px 10px rgba(0,0,0,.8); /*creates the opacity for the shadow*/
+}
+
  /* Spartan Mission Statement */
 h2 {
-  font-size: 3em; 
+  font-size: 2em; 
   font-weight: normal;
   text-transform: uppercase;
   line-height: .7;
   margin: 1 0 .5em;
-  border-bottom:3px solid; 
+  border-bottom:2px solid; 
 }
+ /* adding Javascript forced all of the titles to the right, 
+ i've had to use text-align:center to adjust them to center. */
 
-/*Spartan Training title and Command title*/ 
-h3 {
-  font-size: 2em;
-  border-bottom: 2px solid;
-  color: black;
-  line-height: .7;
-  margin-bottom: 0 0 .5em; 
-   
-}
 /*Spartan Variants*/
-h4 {
+h3 {
   font-size: 2em; 
   font-weight: normal;
   text-transform: uppercase;
   line-height: .7;
   margin: 2 0 .5em; /*adjusts mission variant text spacing  */
   border-bottom:2px solid; 
+  text-align:center; 
 }
+
+/*Spartan Training title and Command title*/ 
+h4 {
+  font-size: 2em;
+  font-weight: normal;
+  border-bottom: 2px solid;
+  text-transform: uppercase;
+  line-height: .7;
+  margin-bottom: 0 0 .5em; 
+  text-align:center;   
+}
+
 
 img {
   max-width: 100%;
@@ -122,16 +137,7 @@ a:active {
  
   
 }
-/*Classification warning*/
-.intro {
-  font-size: 2em 20px/16px;
-  line-height: 1.6;  
-  color: red;
-  letter-spacing: .01em;
-  font-weight:500;; 
-  padding-bottom: 30px;
-  /*text-shadow: 0 5px 5px rgba(0,0,0,.8);*/
-}
+
  /* Spartan, Warning, Role, ONI description*/
 .primary-content,
 .main-header,
