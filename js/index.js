@@ -1,4 +1,8 @@
 console.log("JS")
+/*Show/hide one or more content areas or elements on your site 
+through clicking a button or some other user interaction - 
+must be done with some JavaScript code. */
+
 
 let variable = [
     'Variants', 'Training', 'Commander'  
@@ -13,20 +17,22 @@ function reveal() {
      element.classList.add("hidden");
     }
 }
+/*actively functioning links that send site visitors to the 
+developer websites. */
 
 let MicrosoftStudios = {
     displayText: 'Microsoft Game Studios',
-    url: 'a link to the thing'
+    url: 'https://www.xbox.com/en-US/xbox-game-studios'
 }
 
 let ThreeFourThree = {
-    displayText: '343 Game Studios',
-    url: 'a link to the thing'
+    displayText: '343 Industries',
+    url: 'https://www.343industries.com/studio'
 }
 
 let Bungie = {
    displayText: 'Bungie',
-   url: 'a link to the thing'
+   url: 'https://www.bungie.net/'
 }
 
 let Microsoftelement = document.getElementById('Microsoft')

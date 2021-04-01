@@ -31,11 +31,16 @@ h1,h2 {
  font-family: 'Abolition Regular', Helvetica, Arial, sans-serif ;
 }
 
-/*SECTION 03*/ /*spartan logo*/
+/* Spartan Program, SECTION 03, Spartan Logo*/
 h1 {  
-  font-size: 4rem; 
+  font-size: 6rem; 
   margin: 5px; 
   font-weight: normal;
+}
+
+/*Spartan Logo position*/
+.title {
+  font-size: 3rem;  
 }
 
 /*Classification warning*/
@@ -47,13 +52,18 @@ h1 {
   text-shadow: 0 10px 10px rgba(0,0,0,.8); /*creates the opacity for the shadow*/
 }
 
+/*font size for warning text*/
+.intro {
+  font-size:1.2rem;
+}
+
  /* Spartan Mission Statement */
 h2 {
   font-size: 2em; 
   font-weight: normal;
   text-transform: uppercase;
   line-height: .7;
-  margin: 1 0 .5em;
+  margin: 2 0 .5em;
   border-bottom:2px solid; 
 }
  /* adding Javascript forced all of the titles to the right, 
@@ -81,38 +91,31 @@ h4 {
   text-align:center;   
 }
 
-
+/*controls the training and Commander Images. Can't seem to get the CMD
+Osman image center*/
 img {
   max-width: 100%;
-  margin-bottom: 10px;
-  border-radius: 10px;
+  margin-bottom: 25px;
+  margin-left: auto;
+  display: block;
+  margin-right: auto;
 }
 
-ul,
-ol {
-  margin: 30px 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-/* Pseudo-classes ------------------ */
-
-
-/*Mission Statment*/
+/*Determines the colors of all clickable
+/*Controls the footer links color*/
 a:link {
-  color: royalblue;
-  text-decoration: none;
+  color: Red;
+  text-decoration: none; /* removes bottom-borders
+  from links and makes them just plain floaty text*/
 }
-
 a:visited {
   color: Orange;
+  /*determines the color of the spartan variant inactive links*/
 }
-
 
 a:active {
   color: RoyalBlue;
+  /*changes the link from Orange to blue when clicked*/
 }
 
 /* Main Styles --------------------- */
@@ -130,15 +133,7 @@ a:active {
   color:white;
 }
 
-
-/*Spartan Logo position*/
-.title {
-  font-size: 3rem; 
- 
-  
-}
-
- /* Spartan, Warning, Role, ONI description*/
+ /* Spartan, Warning, Mission Statement, ONI description*/
 .primary-content,
 .main-header,
 .main-footer {
@@ -147,11 +142,11 @@ a:active {
 
 .primary-content {
 	padding-top: 25px;
-  padding-bottom: 100px;
+  padding-bottom: 10px;
 }
 
 .secondary-content {
-	padding-top: 80px;
+	padding-top: 40px;
 	padding-bottom: 70px;
   border-bottom: 2px solid black;
 }
@@ -161,13 +156,9 @@ a:active {
   padding-bottom: 60px;
   border-bottom: 10px solid royalblue;
 }
-
+/*controls the borders around warning and mission statement*/
 .t-border {
   border-top: 2px solid black;
-}
-
-.container-area {
-  /* your styles here*/
 }
 
 .container-area:nth-child(2n) {
@@ -175,6 +166,7 @@ a:active {
 }
 /* Layout Styles ------------------ */
 
+/*Keeping all of the content on the page nice and tidy*/
 .primary-content, 
 .secondary-content {
   width: 75%;
@@ -184,104 +176,69 @@ a:active {
   max-width: 960px;
 }
 
-.Mission Statement {
-  color: black;
-  text-align: right;
-  padding: 20% 25%;
-  border-top: 20px solid black;
-  margin: 1000px 0 60px;
-  background:black 2 url('../img/Training.jpg') no-repeat center;
-  background-size: cover;
-
-}
-
-
-/* Floated Columns */
-
-.Spartan Variants {
-  text-align: center;
-}
-
-/* Float Clearfix */
-
-.group:after {
-  content: "";
-  display:table;
-  clear: both;
-}
-/*adjusts the content of the primary and secondary content areas */
-
  /*Media Queries*/ 
  
- /*changes the color of the screen when narrower than 960px*/
- @media (max-width: 960px) {
-  body {
-   background: royalblue; 
-  }
-}
+ /*changes the color of the screen when narrower than 960px
+ using it for a check on query function*/
+ @media (min-width: 960px) {
 
-@media (max-width: 1024px) {
- .primary-content,
- .secondary-content {
+  .primary-content,
+  .secondary-content {
    width: 90%;
+   max-width: 1000px;
+   margin: 0 auto;
+  } 
  }
-}
-
-  .Spartan logo.png {
-   padding:100% 12;
-   margin: 25px 0 20px;
-  }
-
 /* when content is narrower than*/
-@media (max-width:760px) { 
+@media (min-width:769px) { 
  .primary-content,
  .secondary-content {
   width: 90%;
  }
 }
-
-
+ /*when printing the page formats to a good printable
+ style*/
  @media print {
   section {
     min-height: auto;
   }
  }
 
+ /*Pads the top of the spartan program text*/
 .main-header {
-  /* max-height: 380px; */
   padding: 50px 25px 0;
  }
 
+ /*Spartan program font*/
  .title {
- font-size:1.3rem;
+ font-size:5rem;
  border:none; 
  }
 
+ /*Section 03 font*/
 h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   line-height: 1.1;
 }
 
- .intro {
-  font-size:1rem;
-}
-
-
-
-.commander {
-  float:none;
-  width:100%;
- }
-
  .main-footer {
-   padding:20px 0;
-  }
-}
-
-
-
+   padding:10px 0;
  }
+
+
+ .button {
+  background-color: royalblue; /* blue */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin-left: 45vw
 }
+  
+
+
+
 
 
 
