@@ -1,9 +1,6 @@
 # Spartan-Program
 Spartan Program website
 
-# Treehouse
-Project from my Treehouse Coursework
-
 DUE TO ISSUES WITH GITHUB MAIN, MY CLASS FINAL PROJECT IS STORED IN THE MASTER BRANCH. 
 PLEASE USE THE MASTER BRANCH REPO FOR THE FINAL EVALUATION
 
